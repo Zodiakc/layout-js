@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <label for="time">Выберите направление</label>
+      <select name="route" id="route">
+        <option value="из A в B" selected>из A в B</option>
+        <option value="из B в A">из B в A</option>
+        <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+      </select>
+      <label for="time">Выберите время</label>
+      <select name="time" id="time" class="show">
+        <option value="" selected></option>
+      </select>
+      <select name="timeReverse" id="timeReverse" class="disabled">
+        <option value="" selected></option>
+      </select>
+      <label for="comeBack">Обратно</label>
+      <select name="comeBack" id="comeBack" class="disabled">
+        <option value="" selected></option>
+      </select>
+      <label for="num">Количество билетов</label>
+      <input id="input" />
+      <button id="button">Посчитать</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
